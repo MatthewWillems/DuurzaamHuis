@@ -2,11 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thor</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        body {
+            margin: 0;
+        }
+    #dashboard {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 65px 100px 1fr;
+        grid-gap: 100px;
+    }
+
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .footer1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .footer2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    </style>
 </head>
 <body>
-    
+
+<div id="dashboard">
+    <div class="item header">header</div>
+    <div class="item nav">nav</div>
+    <div class="item contents">contents</div>
+    <div class="item aside">aside</div>
+    <div class="item footer1">footer</div>
+    <div class="item footer2">footer</div>
+</div>
+
+
+
 </body>
 </html>

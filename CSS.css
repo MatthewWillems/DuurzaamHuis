@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+/* Een extern lettertype inladen van Google: https://fonts.google.com */
+
+/* De body van het HTML document een standaard stijl geven
+Als font-family gebruik je dus de naam van het ingeladen lettertype (font)
+*/
+body {
+    background: #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+/* Alle div elementen die een direct "child" zijn van de div met id="dashboard" */
+#dashboard > div {
+    background-color: #24df54;
+    padding: 10px 10px;
+    color: #000000;
+    /*border: 1px solid black;*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Alle elementen met de class = "item" */
+.item {
+    background-color: #24df54;
+    background-color: #24df54;
+    padding: 5px 10px;
+    color: #ffffff;
+    border: 1px solid #24df54;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
