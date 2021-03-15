@@ -8,7 +8,6 @@ body {
     background: #ffffff;
     color: #ffffff;
     font-size: 18px;
-    padding: 5px 10px;
 }
 
 /* Alle div elementen die een direct "child" zijn van de div met id="dashboard" */
