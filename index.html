@@ -12,48 +12,47 @@
         display: grid;
         height: 100vh;
         grid-template-columns: 25%;
-        grid-template-rows: 10% 1fr 28%;
-        grid-gap: 5px;
+        grid-template-rows: 10% 28% 1fr;
+        grid-gap: 10px;
     }
 
     .header {
-        grid-row: 1;
         grid-column-start: 1;
         grid-column-end: 5;
     }
     
     .grafiek {
-        grid-row: 2;
+        grid-row: 3;
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
     .control {
-        grid-row: 2;
+        grid-row: 3;
         grid-column-start: 3;
         grid-column-end: 5;
     }
 
     .gegevens1 {
-        grid-row: 3;
+        grid-row: 2;
         grid-column-start: 0;
         grid-column-end: 0;
     }
 
     .gegevens2 {
-        grid-row: 3;
+        grid-row: 2;
         grid-column-start: 0;
         grid-column-end: 0;
     }
 
     .gegevens3 {
-        grid-row: 3;
+        grid-row: 2;
         grid-column-start: 0;
         grid-column-end: 0;
     }
 
     .gegevens4 {
-        grid-row: 3;
+        grid-row: 2;
         grid-column-start: 0;
         grid-column-end: 0;
     }
@@ -63,13 +62,13 @@
 <body>
 
 <div id="dashboard">
-    <div class="item header">header</div>
-    <div class="item grafiek">grafiek</div>
+    <div class="item header"><img src="Images/THOR.png" alt=""></div>
+    <div class="item grafiek">energieverbruik</div>
     <div class="item control">control panel</div>
-    <div class="item gegevens1">gegevens1</div>
-    <div class="item gegevens2">gegevens2</div>
-    <div class="item gegevens3">gegevens3</div>
-    <div class="item gegevens4">gegevens4</div>
+    <div class="item temperatuur">temperatuur</div>
+    <div class="item apparaten">verbruik apparaten</div>
+    <div class="item verlichting">verbuik verlichting</div>
+    <div class="item bespaard">bespaard deze week</div>
 </div>
 
 

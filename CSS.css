@@ -32,3 +32,10 @@ body {
     font-weight: bold;
     
 }
+
+.header img {
+    max-width: 10%;
+    height: auto;
+    padding-right: 100%;
+    padding-top: 0.4%;
+}
