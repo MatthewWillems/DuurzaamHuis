@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* Een extern lettertype inladen van Google: https://fonts.google.com */
 
 /* De body van het HTML document een standaard stijl geven
@@ -8,13 +8,14 @@ body {
     background: #ffffff;
     color: #ffffff;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 /* Alle div elementen die een direct "child" zijn van de div met id="dashboard" */
 #dashboard > div {
     background-color: #24df54;
     padding: 10px 10px;
-    color: #000000;
+    color: #ffffff;
     /*border: 1px solid black;*/
     font-size: 20px;
     font-weight: bold;
