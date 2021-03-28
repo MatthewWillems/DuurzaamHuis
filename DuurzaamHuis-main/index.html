@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thor</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        body {
+            margin: 0;
+        }
+    #dashboard {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 25%;
+        grid-template-rows: 10% 28% 1fr;
+        grid-gap: 10px;
+    }
+
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
+    .grafiek {
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .besturing {
+        grid-row: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .temperatuur {
+        grid-row: 2;
+        grid-column-start: 0;
+        grid-column-end: 0;
+    }
+
+    .apparaten {
+        grid-row: 2;
+        grid-column-start: 0;
+        grid-column-end: 0;
+    }
+
+    .verlichting {
+        grid-row: 2;
+        grid-column-start: 0;
+        grid-column-end: 0;
+    }
+
+    .bespaard {
+        grid-row: 2;
+        grid-column-start: 0;
+        grid-column-end: 0;
+    }
+
+    </style>
+</head>
+<body>
+
+
+<div id="dashboard">
+    <div class="item header"><img src="Images/THOR.png" alt=""></div>
+    <div class="item grafiek">Energieverbruik</div>
+    
+    <div class="item besturing">Besturing</div>
+
+
+   
+    <div class="item temperatuur">Temperatuur<br><br> <div id="container">
+        <div id="temp">Nothing yet</div>
+    </div>
+    <script src="script.js"></script></div>
+    
+    
+    <div class="item apparaten">Verbruik Apparaten<br><br> <div id="container">
+        <div id="app">Nothing yet</div>
+    </div>
+    <script src="script.js"></script></div>
+
+
+    <div class="item verlichting">Verbruik Verlichting<br><br> <div id="container">
+        <div id="licht">Nothing yet</div>
+    </div>
+    <script src="script.js"></script></div>
+
+    
+    <div class="item bespaard">Bespaard Zeze Week<br><br> <div id="container">
+        <div id="besp">Nothing yet</div>
+    </div>
+    <script src="script.js"></script></div>
+
+    
+</div>
+
+
+
+</body>
+</html>
