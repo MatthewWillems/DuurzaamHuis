@@ -10,11 +10,10 @@
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ["Element", "Density", { role: "style" } ],
-        ["Copper", 8.94, "#b87333"],
-        ["Silver", 10.49, "silver"],
-        ["Gold", 19.30, "gold"],
-        ["Platinum", 21.45, "color: #e5e4e2"]
+        ["Datum", "Verbruik in KwH", { role: "style" }],
+        ["januari", 240.4, "#24df54"],
+        ["februari", 232.8, "#24df54"],
+        ["maart", 231.0, "#24df54"],
       ]);
 
       var view = new google.visualization.DataView(data);
@@ -22,13 +21,12 @@
                        { calc: "stringify",
                          sourceColumn: 1,
                          type: "string",
-                         role: "annotation" },
-                       2]);
+                         role: "annotation" },  2]);
 
       var options = {
-        title: "Density of Precious Metals, in g/cm^3",
-        width: 600,
-        height: 400,
+        title: "Energieverbruik in KwH (1e kwartaal 2021)",
+        width: 500,
+        height: 317.5,
         bar: {groupWidth: "95%"},
         legend: { position: "none" },
       };
@@ -44,8 +42,8 @@
     #dashboard {
         display: grid;
         height: 100vh;
-        grid-template-columns: 25%;
-        grid-template-rows: 10% 28% 1fr;
+        grid-template-columns: 25% 50vh;
+        grid-template-rows: 10% 25% 1fr;
         grid-gap: 10px;
     }
 
@@ -58,6 +56,7 @@
         grid-row: 3;
         grid-column-start: 1;
         grid-column-end: 3;
+        color: #ffff;
     }
 
     .besturing {
@@ -125,7 +124,7 @@
     <script src="script.js"></script></div>
 
     
-    <div class="item bespaard">Bespaard Zeze Week<br><br> <div id="container">
+    <div class="item bespaard">Bespaard Deze Maand<br><br> <div id="container">
         <div id="besp">Nothing yet</div>
     </div>
     <script src="script.js"></script></div>

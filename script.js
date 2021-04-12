@@ -4,7 +4,7 @@ var jcontent = {
 
 var output = document.getElementById('licht')
 
-output.innerHTML = '12KwH';
+output.innerHTML = '45KwH';
 
 
 
@@ -14,7 +14,7 @@ var jcontent = {
 
 var output = document.getElementById('app')
 
-output.innerHTML = '36Kwh';
+output.innerHTML = '136KwH';
 
 
 
@@ -24,7 +24,7 @@ var jcontent = {
 
 var output = document.getElementById('temp')
 
-output.innerHTML = '15°C';
+output.innerHTML = '20,9°C';
 
 
 
@@ -34,7 +34,7 @@ var jcontent = {
 
 var output = document.getElementById('besp')
 
-output.innerHTML = '23€';
+output.innerHTML = '€88,71';
 
 
 
