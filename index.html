@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <title>Thor</title>
     <link rel="stylesheet" href="CSS.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["Copper", 8.94, "#b87333"],
+        ["Silver", 10.49, "silver"],
+        ["Gold", 19.30, "gold"],
+        ["Platinum", 21.45, "color: #e5e4e2"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Density of Precious Metals, in g/cm^3",
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+
     <style>
         body {
             margin: 0;
@@ -35,37 +68,41 @@
 
     .temperatuur {
         grid-row: 2;
-        grid-column-start: 0;
-        grid-column-end: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
     .apparaten {
         grid-row: 2;
-        grid-column-start: 0;
-        grid-column-end: 0;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
 
     .verlichting {
         grid-row: 2;
-        grid-column-start: 0;
-        grid-column-end: 0;
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 
     .bespaard {
         grid-row: 2;
-        grid-column-start: 0;
-        grid-column-end: 0;
+        grid-column-start: 4;
+        grid-column-end: 5;
     }
 
     </style>
 </head>
 <body>
+    
 
 
 <div id="dashboard">
     <div class="item header"><img src="Images/THOR.png" alt=""></div>
-    <div class="item grafiek">Energieverbruik</div>
     
+    <div class="item grafiek">
+        <div id="columnchart_values"></div>
+    </div>
+
     <div class="item besturing">Besturing</div>
 
 
@@ -100,3 +137,4 @@
 
 </body>
 </html>
+

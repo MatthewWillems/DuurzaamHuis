@@ -35,3 +35,11 @@ var jcontent = {
 var output = document.getElementById('besp')
 
 output.innerHTML = '23€';
+
+
+
+var jcontent = {
+    
+}
+
+
