@@ -4,7 +4,7 @@ var jcontent = {
 
 var output = document.getElementById('licht')
 
-output.innerHTML = '45KwH';
+output.innerHTML = '';
 
 
 
@@ -22,9 +22,9 @@ var jcontent = {
     
 }
 
-var output = document.getElementById('temp')
+var output = document.getElementById('total')
 
-output.innerHTML = '20,9°C';
+output.innerHTML = '181 KwH';
 
 
 
